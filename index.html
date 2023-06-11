@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="new.css">
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+  <title>Document</title>
+</head>
+<body>
+    <div id="app">
+      <div class="mainbox">
+        <h1>Product Title</h1>
+        <p>product Descption</p>
+        <h4>Price: ${{originprice}}</h4>
+        <form action="">
+          <label for="">Amount :</label>
+          <input type="range" max="50" min="1" step="1" v-model="rangvalue">
+        </form>
+        <div class="lastspans">
+          <span>Amount {{ rangvalue }}</span>
+          <span>Total ${{finalprice}}</span>
+        </div>
+      </div>
+    </div>
+  <script src="new.js"></script>
+</body>
+</html>
